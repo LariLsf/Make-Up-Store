@@ -7,7 +7,7 @@ class Dados
     private array $data;
     private bool $resultado; 
 
-    private const BD = 'dados';
+    private const BD = 'dados'; 
 
     
 
