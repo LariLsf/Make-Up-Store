@@ -17,15 +17,36 @@
         <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="cpu"></i><span>Configurações</span></a>
         <ul class="dropdown-menu">
           <li><a class="nav-link" href="<?= FILTROS ?>sheep-dados/index&token=<?= $_SESSION['timeWT']?>">Configurações</a></li>
+          <li><a class="nav-link" href="<?= FILTROS ?>sheep-efi/index&token=<?= $_SESSION['timeWT']?>">Banco Efí</a></li>
+          <li><a class="nav-link" href="<?= FILTROS ?>sheep-redes/index&token=<?= $_SESSION['timeWT']?>">Redes Socias</a></li>
+          <li><a class="nav-link" href="<?= FILTROS ?>sheep-cores-site/index&token=<?= $_SESSION['timeWT']?>">Cores</a></li>
         
+        </ul>
+      </li>
+
+      <li class="menu-header">Departamentos</li>
+      <li class="dropdown">
+        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="list"></i><span>Categorias</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="<?= FILTROS ?>sheep-categorias/index&token=<?=$_SESSION['timeWT']?>">Departamentos</a></li>
+        
+        </ul>
+      </li>
+
+      <li class="menu-header">Banners</li>
+      <li class="dropdown">
+        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="award"></i><span>Publicidades</span></a>
+        <ul class="dropdown-menu">
+         <li><a href="<?= FILTROS ?>sheep-destaque/index&token=<?= $_SESSION['timeWT'] ?>">Destaques</a></li>
+         <li><a href="<?= FILTROS ?>sheep-banners/index&token=<?= $_SESSION['timeWT'] ?>">Banners</a></li>
         </ul>
       </li>
 
       <li class="menu-header">Clientes e Usuários</li>
       <li class="dropdown">
-        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span>Usuarios</span></a>
+        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="trending-up"></i><span>Usuarios </span></a>
         <ul class="dropdown-menu">
-          <li><a href="<?= FILTROS ?>sheep-usuarios/index&token=<?= $_SESSION['timeWT']?>">Listar</a></li>
+          <li><a href="<?= FILTROS ?>sheep-usuarios/index&token=<?=$_SESSION['timeWT']?>">Listar</a></li>
          
 
         </ul>

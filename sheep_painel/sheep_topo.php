@@ -87,7 +87,7 @@ require_once("sheep_checa.php");
 
               <span class="d-sm-none d-lg-inline-block"></span></a>
             <div class="dropdown-menu dropdown-menu-right pullDown">
-              <div class="dropdown-title"> Maykon </div>
+              <div class="dropdown-title"> Larissa </div>
 
               <a href="" class="dropdown-item has-icon"> <i class="far
 										fa-user"></i> Perfil

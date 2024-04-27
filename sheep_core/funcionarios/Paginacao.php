@@ -3,21 +3,19 @@
 /**
  * Gerente de paginação - Sheep PHP
  * Classe para paginação de resultados
- * @copyright (c) 2021, Maykon Silveira - WEBTEC TECHNOLOGIES
- * Site oficial www.maykonsilveira.com.br EAD cursos online.
  */
 class Paginacao {
-    /** DEFINE O PAGER - MAYKON SILVERA WEBTECPR.COM.BR */
+    /** DEFINE O PAGER */
     private $Page;
     private $Limit;
     private $Offset;
     
-    /** REALIZAR A LEITURA - MAYKON SILVERA WEBTECPR.COM.BR */
+    /** REALIZAR A LEITURA */
     private $Tabela;
     private $Termos;
     private $Places;
         
-    /** DEFINE O PAGINATOR - MAYKON SILVERA WEBTECPR.COM.BR */
+    /** DEFINE O PAGINATOR */
     private $Rows;
     private $Link;
     private $MaxLinks;
@@ -25,7 +23,7 @@ class Paginacao {
     private $Last;
     
     
-    /** RENDERIZA O PAGINATOR - MAYKON SILVERA WEBTECPR.COM.BR */
+    /** RENDERIZA O PAGINATOR*/
     private $Paginator;
     
       /**
@@ -120,11 +118,7 @@ class Paginacao {
         return $this->Paginator;
     }
     
-     /**
-     * ***********WEBTECPR.COM.BR*************
-     * ********** PRIVATE METHODS *************
-     * ************MAYKON***SILVEIRA************
-     */
+   
     
     //Cria a paginação de resultados
     private function getSyntax() {

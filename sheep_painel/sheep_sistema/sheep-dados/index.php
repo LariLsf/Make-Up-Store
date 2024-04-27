@@ -1,5 +1,5 @@
 <?php 
-$editar = '361361';
+$editar = '78451';
 $sheep->Leitura('dados', "WHERE id = :id", "id={$editar}");
 $dadosConfig = Formata::Resultado($sheep);
 if($dadosConfig){
@@ -23,9 +23,9 @@ if($dadosConfig){
 
      <section class="section">
 
-      <!-- INICIO MENSAGEN DE RETORNO --->
+      <!--INICIO MENSAGEN DE RETORNO --->
         <?php include_once 'token.php'; ?>
-      <!-- FIM MENSAGEN DE RETORNO --->
+      <!--FIM MENSAGEN DE RETORNO --->
        
        <form action="<?= URL_CAMINHO_PAINEL . FILTROS . "sheep-dados/filtros/atualizar&token={$_SESSION['timeWT']}"?>" method="post" enctype="multipart/form-data">
 
@@ -54,8 +54,12 @@ if($dadosConfig){
                      <div class="col-sm-12 col-md-7">
                        <div id="image-preview" class="image-preview">
                          <label for="image-upload" id="image-label">Buscar Imagem</label>
+                         <?php if($dados->logo){ ?>
+                          <img src="<?= SHEEP_IMG_LOGOMARCA . $dados->logo?>" alt="<?=SITENAME?>" style="width:100%; height:auto;">
+                         <?php } ?>
 
                          <input type="file" name="logo" id="image-upload" />
+
                        </div>
                      </div>
                    </div>
@@ -66,8 +70,9 @@ if($dadosConfig){
                      <div class="col-sm-12 col-md-7">
                        <div id="image-preview" class="image-preview">
                          <label for="image-upload2" id="image-label">Favicon</label>
-
-                         
+                         <?php if($dados->icone){ ?>
+                          <img src="<?= SHEEP_IMG_LOGOMARCA . $dados->icone?>" alt="<?=SITENAME?>" style="width:100%; height:auto;">
+                         <?php } ?>
                           <img src="assets/img/sem-imagem.png" style="width:100%; height:auto;">
                          
                        </div>
@@ -155,6 +160,14 @@ if($dadosConfig){
                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">CEP</label>
                      <div class="col-md-7">
                        <input type="text" id="cepmj" class="form-control" name="cep" placeholder="Digite um CEP Válido!" value="<?= $dados->cep ? $dados->cep : null;?>">
+                     </div>
+
+                   </div>
+
+                   <div class="form-group row mb-4">
+                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Token Correios</label>
+                     <div class="col-md-7">
+                       <input type="text"  class="form-control" name="token_correios" placeholder="Digite o token dos correios" value="<?= $dados->token_correios ? $dados->token_correios : null;?>">
                      </div>
 
                    </div>

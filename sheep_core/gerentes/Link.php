@@ -4,7 +4,7 @@
  * Link [ MODEL ]
  * Classe responsável por organizar o SEO do sistema e realizar a navegação!
  * 
- * @copyright (c) LARISSAFERREIRA 
+ * @copyright (c)  
  */
 class Link {
 

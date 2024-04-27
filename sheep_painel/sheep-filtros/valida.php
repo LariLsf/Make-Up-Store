@@ -7,7 +7,7 @@ if(!$_SESSION['sheep_user']){
     exit();
 }
 
-// SE O NIVEL FOR DIFERENTE DE 'M', ELE SAI
+// SE O NIVEL FOR DIFERENTE DE 'M', ELE SAI - se o nível for diferente de M saia do painel 
 if($_SESSION['sheep_user']['nivel'] != 'M'){
     unset($_SESSION['sheep_user']);
     header("Location: " . URL_CAMINHO_PAINEL . "index.php?sheep_saiu=true");

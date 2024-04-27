@@ -9,7 +9,7 @@
 date_default_timezone_set('America/Sao_Paulo');
 
 //configurações do banco de dados
-define('SHEEP_URL', 'localhost/make-up-store');//ou dominio
+define('SHEEP_URL', 'localhost/make-up-store/');//ou dominio
 define('SHEEP_HOST','localhost');
 define('SHEEP_USER','root');
 define('SHEEP_SENHA','');

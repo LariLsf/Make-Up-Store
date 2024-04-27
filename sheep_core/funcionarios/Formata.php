@@ -1,24 +1,5 @@
+
 <?php
-/**********************************************************************
- * ********************************************************************
- * GERENTE DE FORMATAÇÃO MAYKONSILVEIRA.COM.BR E MAYKON SILVEIRA
- * 
- * ********************************************************************
- * MAYKONSILVEIRA.COM.BR DEREICIONANDO VOCÊ PARA O CAMINHO DO SUCESSO #*
- * *************MAYKON***SILVEIRA**************************************
- * *************sheep**PHP***********************************
- * ********************************************************************
- * TUDO AQUI FOI CRIADO NO DIA 01-10-2021 POR MAYKON SILVEIRA
- * TODOS OS DIREITOS RESERVADOS E CÓDIGO FONTE RASTREADO COM ARQUIVOS 
- * CRIADO POR MAYKONSILVEIRA.COM.BR DESDE 2007 *********
- * TODA SABEDORIA PARA CRIAR ESTES SISTEMAS VEM DO SANTO E ETERNOR PAI
- * O SANTO SENHOR DEUS DE ABRAÃO, ISSAC E JACÓ E DO MEU ÚNICO SENHOR 
- * O MESSIAS NOSSO SALVADOR, POIS A GLROIA É DO PAI E DO FILHO PARA SEMPRE
- * ********************************************************************
- */
- //SDK PHPMAILLER
-
-
  require 'PHPMailer/src/Exception.php';
  require 'PHPMailer/src/PHPMailer.php';
  require 'PHPMailer/src/SMTP.php';  
@@ -93,7 +74,6 @@ class Formata {
      * @return STRING = $id = INT ESSE É O ID QUE LIGA A GALERIA A QUALQUER BANCO DE DDOS NO NOSSO EXEMPLO PRODUTOS 
      * @return STRING = $tipo = ESSE É O TIPO DA GALERIA FILTRANDO ELA E O ID - PARA EVITAR APAGAR UM ID DIFERENTE DESTE POR TER VARIOS ID PARECIDOS
      * EXEMPLO DE USO =   Formata::galeriaImagens('produto', '../img-produtos/', $_FILES['fotos'], $atualizarProduto['id'], $atualizarProduto['tipo']);
-     * CRIADO POR MAYKONSILVEIRA.COM.BR E MSFLIX.COM.BR DIA 25-10-2023 
      */
  public static function galeriaImagens(string $bancoLeitura, string $pastaImagens, array $imagens, int $id, string $tipo) {
     
@@ -119,7 +99,7 @@ class Formata {
 
          foreach ($gbFiles as $gbUpload):
              $i++;
-             $imgName = "{$nomeImagem}-maykons-silveira-{$id}-" . (substr(md5(time() + $i), 0, 5)).'-'.date('h').date('s').'-ano-'.date('Y').'-';
+             $imgName = "{$nomeImagem}-larissa-ferreira-{$id}-" . (substr(md5(time() + $i), 0, 5)).'-'.date('h').date('s').'-ano-'.date('Y').'-';
              $gbSend->Image($gbUpload, $imgName);
 
              if ($gbSend->getResult()):
@@ -152,7 +132,6 @@ class Formata {
      * @return STRING = $id = INT ID DA FOTO
      * @return STRING = $tipo = ESSE É O TIPO DA GALERIA FILTRANDO ELA E O ID - PARA EVITAR APAGAR UM ID DIFERENTE DESTE POR TER VARIOS ID PARECIDOS
      * EXEMPLO DE USO = Formata::removeImagemGaleria($id, '../img-produtos/', 'produto');
-     * CRIADO POR MAYKONSILVEIRA.COM.BR E MSFLIX.COM.BR DIA 25-10-2023 
      */
  public static function removeImagemGaleria(int $id, string $pastaImagem, string $tipo = null){
      //remove a imagem da pasta imagens
@@ -177,8 +156,6 @@ class Formata {
 /**
      *
      * 
-     * FAZ O COMPRIMENTO AUTOMÁTICO EXEMPLO BOM DIA, BOA TARDE E BOA NOITE DE ACORDO COM A HORA DO DIA
-     * POR MAYKON SILVEIRA MAYKONSILVEIRA.COM.BR
      * 
      */
     public static function Comprimento(){
@@ -269,7 +246,7 @@ class Formata {
     /**
      *
      * 
-     * CONVERTE O MÊS EM ESCRITA POR MAYKON SILVEIRA MAYKONSILVEIRA.COM.BR
+     * CONVERTE O MÊS EM ESCRITA 
      * 
      */
     public static function Mes($mes){
@@ -307,12 +284,8 @@ class Formata {
     
     
     /**
-     * 
-     * PARA GERAR QUANTO TEMPO A EMPRESA MAYKONSILVEIRA.COM.BR ESTÁ ONLINE 
-     * POR MAYKON SILVEIRA - MAYKONSILVEIRA.COM.BR
-     * CRIADO DIA 25/01/2021
-     * 
-     */
+     PARA GERAR QUANTO TEMPO A EMPRESA   
+    **/
     public static function EmpresaSheep() {
         $empresaCriada = 2021;
         $dataAtual = date('Y');
@@ -324,12 +297,9 @@ class Formata {
     }
 
    
-        /**
+    /**
      *
-     * 
-     * MOSTRA O DIA DA SEMANA DE ACORDO COM A DATA CRIADO DIA 27/01/2021
-     * POR MAYKON SILVEIRA WEBTECPR.COM.BR - MAYKONSILVEIRA.COM.BR
-     * 
+     * MOSTRA O DIA DA SEMANA DE ACORDO COM A DATA 
      */
     public static function DiaDaSemana($data){
      $diasemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];

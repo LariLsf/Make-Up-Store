@@ -487,7 +487,7 @@ function donutChart() {
 
   // Add data
   chart.data = [{
-    "country": "Maykon Você é Bilionário",
+    "country": "Você é Bilionário",
     "litres": 501.9
   }, {
     "country": "Czech Republic",

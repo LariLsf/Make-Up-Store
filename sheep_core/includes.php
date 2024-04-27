@@ -1,6 +1,6 @@
 <?php
 /*************************************************************************************
-*CONFIGURAÇÕES FRAMEWORK SEEP PHP 
+*CONFIGURAÇÕES FRAMEWORK SHEEP PHP 
  * ************************************************************************************
 */
 
@@ -11,13 +11,15 @@ define('SHEEP_IMG_URL', '/sheep_painel/sheep-imagens/');
 
 //PASTA GERAL DE USUÁRIOS
 define('SHEEP_IMG_USUARIOS', '../fotos-usuarios/');
+define('SHEEP_IMG_LOGOMARCA', '../img-logo/');
+define('SHEEP_IMG_BANNERS', '../img-banners/');
 
 define('SHEEP_IMG_LOGO', '../../../sheep_temas/sheep-imagens-logo/');
 
 //IMAGENS PARA O LAYUT EXTERNO GERAL DE IMAGENS E ARQUIVOS CAMINHO DO PAINEL A MODELOS######################
 define('SHEEP_IMG_PAINEL', './sheep_temas/sheep-imagens/');
 
-//PASTA GERAL DE vídeos CAMINHO DO PAINEL A MODELOS######################
+//PASTA GERAL DE VIDEOS CAMINHO DO PAINEL A MODELOS######################
 define('SHEEP_AUDIO', '../../../sheep_temas/sheep-midias/');
 
 //AQUI IREI ADICIONAR VERSÃO E MODELO######################
@@ -25,9 +27,8 @@ define('SHEEP_VERSAO','Versão: [ 3.0.0 ] - <b>Atualizado dia: 13/11/2023</b>');
 
 //AQUI TEXTO DA VERSÃO VERSÃO E MODELO######################
 define('sheep','<center><h2>Atenção!</h2></center><br>'
-        . 'Este código de fonte é registrado e todos os direitos são reservados a empresa:<br> '
-        . '<b>Maykon Silveira</b><br>'
-        . '<p>Framework maykonsilveira.com.br e o código de fonte são patenteados. </p>');
+        . 'Este código de fonte é registrado e todos os direitos são reservados a empresa: Make-Up<br> '
+        . '<p>Framework SHEEP e o código de fonte são patenteados. </p>');
 
 /**********************************************************************
  * ********************************************************************
@@ -67,7 +68,7 @@ spl_autoload_register("sheep_classes");
  
 
  define('SITENAME', 'NOME DO SITE');
- define('SITEDESC', 'SITE MAYKONSILVEIRA.COM.BR');
+ define('SITEDESC', 'SITE LARISSAFERREIRA.COM.BR');
  define('FONE', '');
  define('CNPJ', '');
  define('CELULAR', '');
@@ -141,16 +142,16 @@ if( isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ) {
 define('FILTROS','sheep.php?m=');
 
 //ICONE DO SITE SHEEP PHP
-define('SHEEP_ICONE', 'assets/img/logo/icone.png');
+define('SHEEP_ICONE', 'assets/img/logo/icone.jpg');
 
 // LOGO DO PAINEL SHEEP PHP 
-define('SHEEP_LOGO', 'assets/img/logo/LOGO-SHEEP-PHP-MAYKON-SILVEIRA2.png');
+define('SHEEP_LOGO', 'assets/img/logo/logoEscura.png');
 
 // TITULO PAINEL SHEEP PHP 
-define('SHEEP_TITULO_PAINEL', 'Painel de Controle Sheep PHP - MaykonSilveira.com.br');
+define('SHEEP_TITULO_PAINEL', 'Painel de Controle Sheep PHP');
 
 // RODAPE TEXTO PAINEL SHEEP PHP 
-define('SHEEP_RODAPE_PAINEL', '<a href="https://maykonsilveira.com.br/" title="EAD MaykonSilveira.com.br">Todos os Direitos Reservados a EAD MaykonSilveira.com.br SHEEP PHP</a>');
+define('SHEEP_RODAPE_PAINEL', '<a href="https://larissaferreira.com.br/"SHEEP PHP</a>');
 
 
 

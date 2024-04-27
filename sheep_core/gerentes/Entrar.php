@@ -30,7 +30,6 @@ class Entrar
     }
 
     
-
     private function verificaUsuario(): ?array
     {
         $ler = new Ler();

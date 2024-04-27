@@ -52,7 +52,7 @@
   
 
   <?php 
-  // Mensagens do sistema sheep php Maykon Silveira
+  // Mensagens do sistema sheep php
   include_once("sheep_flash_msg.php");
 
   ?>
